@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvexter - Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome (for social icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top shadow py-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="icon.jpg" alt="Profile" class="rounded-circle shadow" width="70" height="70" align="center">
+        &nbsp;Canvexter
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="fixed-fluid bg-secondary text-white text-center py-5 fade-in-down">
+    <br><br><br><br>
+    <div class="container fade-in-down">
+      <h1 class="lead">Contact Me!</h1>
+    </div>
+  </header>
+
+  <div class="container mt-5 fade-in-down bg-light shadow">
+    <br><br>
+    <h2 class="display-4">Reach Me!</h2><br>
+
+    <!-- Netlify form with data-netlify="true" -->
+    <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
+      <div><input name="bot-field" class="d-none"></div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+    <br><br>
+  </div>
+
+  <br><br>
+
+  <footer>
+    <div class="bg-light text-center py-4">
+      <h5 class="mb-4">Follow Me!</h5>
+      <ul class="list-unstyled social-links d-flex justify-content-center gap-4">
+        <!-- Facebook -->
+        <li>
+          <a href="https://facebook.com/yourprofile" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </li>
+        <!-- Twitter -->
+        <li>
+          <a href="https://twitter.com/yourprofile" target="_blank">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </li>
+        <!-- Instagram -->
+        <li>
+          <a href="https://instagram.com/yourprofile" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </li>
+        <!-- LinkedIn -->
+        <li>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </li>
+        <!-- GitHub -->
+        <li>
+          <a href="https://github.com/yourusername" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bg-dark text-center text-white py-3">
+      &copy; 2025 Terminal Canvas. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
